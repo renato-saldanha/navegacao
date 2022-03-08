@@ -2,6 +2,9 @@ import React from 'react';
 import TextoCentral from '../components/TextoCentral';
 
 export default props => {
-  console.warn(props.route.params ? props.route.params : 0);
-  return <TextoCentral corFundo="#9932cd">TelaC</TextoCentral>;
+  return (
+    <TextoCentral corFundo="#9932cd">
+      TelaC-{props.route.params ? props.route.params : 0}
+    </TextoCentral>
+  );
 };
